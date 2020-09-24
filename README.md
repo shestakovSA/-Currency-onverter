@@ -1,2 +1,2 @@
-# -Currency-onverter
+# CurrencyСonverter
 Конвертер валют по актуальному курсу валют
