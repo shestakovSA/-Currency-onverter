@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+           let ValuteVC = storyboard?.instantiateViewController(identifier: "ValuteListViewController") as! ValuteListViewController
+        self.navigationController?.pushViewController(ValuteVC, animated: true)
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+          navigationController?.setNavigationBarHidden(true, animated: true)
+      }
 }
 
